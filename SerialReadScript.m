@@ -1,10 +1,10 @@
 clear, close all, clc; %#ok<DUALC>
 %% txt file
-fileName = 'data.txt';    % enter name of file to write data to
+fileName = 'Experiment_values_1.txt';    % enter name of file to write data to
 
 fileID = fopen(fileName,'w');
 %% setup serial port
-port = 'COM7';                  % set serial port where the arduino is connected (e.g. 'COM4' on Windows or '/dev/cu.usbmodem11101' on Mac OSX)
+port = 'COM6';                  % set serial port where the arduino is connected (e.g. 'COM4' on Windows or '/dev/cu.usbmodem11101' on Mac OSX)
 baudRate = 9600;                % set baud rate to the same value as in the arduino script
 
 s = serialport(port,baudRate);
