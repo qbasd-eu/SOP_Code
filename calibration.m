@@ -7,7 +7,7 @@ reservoir_radius = reservoir_diameter / 2; % cm
 reservoir_area = pi * reservoir_radius^2; % cm²
 
 % Known starting volume for calibration (Dataset 1)
-known_starting_volume = 500; % ml
+known_starting_volume = 450; % ml
 
 % Read Dataset 1 for calibration
 data1 = readmatrix('Experiment_values_1.txt');

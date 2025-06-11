@@ -1,6 +1,6 @@
 clear, close all, clc; %#ok<DUALC>
 %% txt file
-fileName = 'Experiment_values_1.txt';    % enter name of file to write data to
+fileName = 'Experiment_values_2.txt';    % enter name of file to write data to
 
 fileID = fopen(fileName,'w');
 %% setup serial port
@@ -32,3 +32,7 @@ end
 fclose(fileID);
 
 disp("serial data written to "+fileName)
+
+run("calibration.m");
+
+run("analysis.m")

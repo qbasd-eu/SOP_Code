@@ -34,7 +34,7 @@ unsigned long lastFlowMillis = 0;         // Timing reference for flow measureme
 
 // Calibration constant: Adjust depending on your sensor's datasheet or calibration tests.
 // For a YF-S401 sensor, you might need to determine this experimentally.
-const float calibrationFactor = 98;
+const float calibrationFactor = 2077;
 
 // ----- TIMING VARIABLE for CSV output -----
 unsigned long startTime = 0;
